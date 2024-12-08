@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}*/
+
+body {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.6rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*NAVBAR*/
+
+nav {
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#logo-box .logo {
+    color: white;
+    font-weight: 700;
+}
+
+#nav-links {
+    /*width: 100%;*/
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all 0.2s;
+}
+
+#nav-links .nav-link { 
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: block;
+    padding-right: 2.6rem;
+    padding-left: 2.6rem;
+    letter-spacing: 0.1rem;
+}
+
+#nav-links .nav-item:hover {
+  background-color: rgb(46, 47, 47);
+}
+
+#nav-socials {
+    float: right;
+}
+
+#nav-socials .nav-social {
+    float: left;
+    padding-right: 2rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#nav-socials .nav-emblem {
+    color: white;
+}
+
+#nav-links .nav-icon {
+    display: none;
+}
+
+/*HEADER*/
+
+header {
+    position: relative;
+    height: 66rem;
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(images/laptop-murjp1nk4lp1idlt.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-position: top center; 
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header .content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 4rem;
+}
+
+h1 {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+header .btn {
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    display: inline-block;
+    background: rgb(215, 7, 7);
+    color: white;
+    border: 1px solid rgb(215, 7, 7);
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+header .btn:hover {
+    background: rgb(138, 3, 3);
+    border: 1px solid rgb(138, 3, 3);
+}
+
+header p {
+    font-family: "Open Sans", serif;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width:630px) {
+    header h1 {
+        font-size: 3rem ;
+    }
+    header p {
+        font-size: 1rem ;
+    }
+}
+
+#section-a .about {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding: 6rem;
+    padding-left: 12rem;
+    padding-bottom: 8rem;
+}
+
+#section-a p {
+    padding-left: 8rem;
+}
+
+#section-a h1 {
+    font-size: 6rem;
+}
+
+#section-a {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section-a .s-1 {
+    color: rgb(4, 142, 227);
+    float: left;
+}
+
+#section-a .s-2 {
+    color: gray;
+    float: left;
+}
+
+#section-a .s-3 {
+    color: green;
+    float: left;
+}
+
+#section-a img {
+    margin-right: 10rem;
+    width: 40rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width:830px) {
+    #section-a img {
+        margin: 0;
+    }
+
+    #section-a {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-a h1 {
+        font-size: 5rem;
+    }
+
+}
+
+#section-b {
+    height: auto;
+    background-color: rgb(223, 93, 93);
+}
+
+#section-b h2 {
+    font-family: "Lato", serif;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 5rem;
+}
+
+#section-b h3 {
+    font-family: "Open Sans", serif;
+    font-weight: normal;
+}
+
+#section-b p {
+    font-size: 2rem;
+    font-family: "Open Sans", serif;
+}
+
+#section-b .container {
+    display: flex;
+    justify-content: center;
+}
+
+#section-b .card1 {
+    text-align: center; /* İçeriği ortalamak için */
+    display: flex; /* Flexbox kullanıyoruz */
+    flex-direction: column; /* Yatay değil, dikeyde hizalama */
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center; 
+    background: white;
+    width: 320px;
+    height: 400px;
+    margin: 45px;
+    border-radius: 4rem;
+    padding: 2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#section-b .card2 {
+    text-align: center; /* İçeriği ortalamak için */
+    display: flex; /* Flexbox kullanıyoruz */
+    flex-direction: column; /* Yatay değil, dikeyde hizalama */
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center;
+    background: white;
+    width: 320px;
+    height: 400px;
+    margin: 45px;
+    border-radius: 4rem;
+    padding: 2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#section-b .card3 {
+    text-align: center; /* İçeriği ortalamak için */
+    display: flex; /* Flexbox kullanıyoruz */
+    flex-direction: column; /* Yatay değil, dikeyde hizalama */
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center;
+    background: white;
+    width: 320px;
+    height: 400px;
+    margin: 45px;
+    border-radius: 4rem;
+    padding: 2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1034px){
+    #section-b h3 {
+        font-size:2rem ;
+    }
+
+    #section-b p {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #section-b .container {
+        flex-direction: column; /* Kartlar dikeyde sıralanacak */
+        align-items: center; /* Kartları ortalayalım */
+    }
+
+    #section-b .card1, 
+    #section-b .card2, 
+    #section-b .card3 {
+        width: 100%; /* Kartların genişliğini %100 yaparak ekranın tamamını kapsamasını sağlar */
+        margin: 20px 0; /* Üst ve alt margin */
+    }
+}
+
+#section-b h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#section-b .image-1 {
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
+}
+
+#section-b .image-2 {
+    width: 10rem;
+    height: auto;
+}
+
+#section-b .image-3 {
+    width: 10rem;
+    height: auto;
+}
+
+#section-b img {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    height: 20rem;
+    background-color: rgb(46, 46, 46);
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding: 3rem;
+}
+
+footer a {
+    padding: 2rem;
+    color: white;
+}
+
+footer .contact{
+    display: flex;               
+    justify-content: center;    
+    align-items: center;         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
